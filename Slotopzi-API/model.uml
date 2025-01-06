@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.sliit.slotopzi.model</OriginalElement>
+  <nodes>
+    <node x="193.5608108108108" y="2226.0">com.sliit.slotopzi.model.Appointment</node>
+    <node x="346.68581081081084" y="356.0">com.sliit.slotopzi.model.Customer</node>
+    <node x="246.7304054054054" y="1248.0">com.sliit.slotopzi.model.ServiceEntry</node>
+    <node x="101.91621621621621" y="934.0">com.sliit.slotopzi.model.Slot</node>
+    <node x="338.9162162162162" y="846.0">com.sliit.slotopzi.model.Repair</node>
+    <node x="122.79729729729732" y="629.0">com.sliit.slotopzi.model.Invoice</node>
+    <node x="71.06081081081078" y="2011.0">com.sliit.slotopzi.model.AppointmentSlot</node>
+    <node x="102.6054054054054" y="1760.0">com.sliit.slotopzi.model.Section</node>
+    <node x="395.68581081081084" y="596.0">com.sliit.slotopzi.model.RateAndReview</node>
+    <node x="399.9804054054054" y="0.0">com.sliit.slotopzi.model.UserData</node>
+    <node x="223.2304054054054" y="1554.0">com.sliit.slotopzi.model.SubCategory</node>
+    <node x="579.9804054054055" y="11.0">com.sliit.slotopzi.model.Vehicle</node>
+    <node x="321.31081081081084" y="1956.0">com.sliit.slotopzi.model.Staff</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Repair" relationship="TO_MANY">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="77.9804054054054" y="1924.0" />
+      <point x="77.9804054054054" y="1226.0" />
+      <point x="83.2304054054054" y="1226.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="-62.25" y="159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_MANY">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="82.9804054054054" y="1924.0" />
+      <point x="82.9804054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="-60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.SubCategory" target="com.sliit.slotopzi.model.Section" relationship="DEPENDENCY">
+      <point x="55.25" y="71.0" />
+      <point x="388.9804054054054" y="1718.0" />
+      <point x="271.6722972972973" y="1718.0" />
+      <point x="56.5" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.SubCategory" relationship="DEPENDENCY">
+      <point x="56.5" y="-71.0" />
+      <point x="271.6722972972973" y="1718.0" />
+      <point x="388.9804054054054" y="1718.0" />
+      <point x="55.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.Staff" relationship="TO_ONE">
+      <point x="-57.25" y="-82.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="378.06081081081084" y="2195.0" />
+      <point x="-56.75" y="104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Repair" relationship="DEPENDENCY">
+      <point x="56.75" y="-104.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="599.6722972972973" y="1924.0" />
+      <point x="599.6722972972973" y="1216.0" />
+      <point x="569.4358108108108" y="1216.0" />
+      <point x="569.4358108108108" y="1206.0" />
+      <point x="525.6662162162162" y="1206.0" />
+      <point x="62.25" y="159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Staff" relationship="DEPENDENCY">
+      <point x="62.25" y="159.0" />
+      <point x="525.6662162162162" y="1206.0" />
+      <point x="569.4358108108108" y="1206.0" />
+      <point x="569.4358108108108" y="1216.0" />
+      <point x="599.6722972972973" y="1216.0" />
+      <point x="599.6722972972973" y="1924.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Appointment" relationship="TO_ONE">
+      <point x="-56.75" y="104.0" />
+      <point x="378.06081081081084" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Staff" relationship="DEPENDENCY">
+      <point x="60.25" y="126.0" />
+      <point x="427.4804054054054" y="1522.0" />
+      <point x="372.2304054054054" y="1522.0" />
+      <point x="372.2304054054054" y="1532.0" />
+      <point x="455.3554054054054" y="1532.0" />
+      <point x="455.3554054054054" y="1924.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.ServiceEntry" relationship="DEPENDENCY">
+      <point x="56.75" y="-104.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="455.3554054054054" y="1924.0" />
+      <point x="455.3554054054054" y="1532.0" />
+      <point x="372.2304054054054" y="1532.0" />
+      <point x="372.2304054054054" y="1522.0" />
+      <point x="427.4804054054054" y="1522.0" />
+      <point x="60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.RateAndReview" target="com.sliit.slotopzi.model.Customer" relationship="TO_ONE">
+      <point x="37.75" y="-93.0" />
+      <point x="508.93581081081084" y="569.0" />
+      <point x="533.4358108108108" y="569.0" />
+      <point x="62.25" y="93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Slot" relationship="TO_ONE">
+      <point x="-60.25" y="-126.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="110.3554054054054" y="1216.0" />
+      <point x="115.6054054054054" y="1216.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="-54.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.RateAndReview" relationship="TO_ONE">
+      <point x="62.25" y="93.0" />
+      <point x="533.4358108108108" y="569.0" />
+      <point x="508.93581081081084" y="569.0" />
+      <point x="37.75" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Slot" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_ONE">
+      <point x="-54.25" y="71.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="115.6054054054054" y="1216.0" />
+      <point x="110.3554054054054" y="1216.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="-60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.AppointmentSlot" target="com.sliit.slotopzi.model.Appointment" relationship="TO_ONE">
+      <point x="-56.75" y="49.0" />
+      <point x="127.81081081081078" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.AppointmentSlot" relationship="TO_ONE">
+      <point x="-57.25" y="-82.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="127.81081081081078" y="2195.0" />
+      <point x="-56.75" y="49.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.UserData" target="com.sliit.slotopzi.model.Staff" relationship="DEPENDENCY">
+      <point x="40.0" y="137.0" />
+      <point x="519.9804054054055" y="295.0" />
+      <point x="484.9804054054054" y="295.0" />
+      <point x="484.9804054054054" y="315.0" />
+      <point x="677.9222972972973" y="315.0" />
+      <point x="677.9222972972973" y="1924.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.UserData" relationship="DEPENDENCY">
+      <point x="56.75" y="-104.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="677.9222972972973" y="1924.0" />
+      <point x="677.9222972972973" y="315.0" />
+      <point x="484.9804054054054" y="315.0" />
+      <point x="484.9804054054054" y="295.0" />
+      <point x="519.9804054054055" y="295.0" />
+      <point x="40.0" y="137.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Repair" relationship="TO_MANY">
+      <point x="-56.75" y="126.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="336.18581081081084" y="335.0" />
+      <point x="336.18581081081084" y="814.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="-62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.Vehicle" relationship="TO_ONE">
+      <point x="-62.25" y="-93.0" />
+      <point x="408.93581081081084" y="335.0" />
+      <point x="474.5472972972973" y="335.0" />
+      <point x="474.5472972972973" y="315.0" />
+      <point x="287.2972972972973" y="315.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="-56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Customer" relationship="TO_ONE">
+      <point x="-56.75" y="126.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="287.2972972972973" y="315.0" />
+      <point x="474.5472972972973" y="315.0" />
+      <point x="474.5472972972973" y="335.0" />
+      <point x="408.93581081081084" y="335.0" />
+      <point x="-62.25" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.SubCategory" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_ONE">
+      <point x="-55.25" y="-71.0" />
+      <point x="278.4804054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="-60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.SubCategory" relationship="TO_ONE">
+      <point x="-60.25" y="126.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="278.4804054054054" y="1532.0" />
+      <point x="-55.25" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Section" relationship="TO_MANY">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="159.1054054054054" y="1924.0" />
+      <point x="-56.5" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_ONE">
+      <point x="-62.25" y="159.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="83.2304054054054" y="1206.0" />
+      <point x="110.3554054054054" y="1206.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="-60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Repair" relationship="TO_ONE">
+      <point x="-60.25" y="-126.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="110.3554054054054" y="1206.0" />
+      <point x="83.2304054054054" y="1206.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="-62.25" y="159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.Vehicle" relationship="DEPENDENCY">
+      <point x="57.25" y="-82.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="826.6722972972973" y="2185.0" />
+      <point x="826.6722972972973" y="335.0" />
+      <point x="750.2304054054055" y="335.0" />
+      <point x="56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Appointment" relationship="DEPENDENCY">
+      <point x="56.75" y="126.0" />
+      <point x="750.2304054054055" y="335.0" />
+      <point x="826.6722972972973" y="335.0" />
+      <point x="826.6722972972973" y="2185.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Invoice" relationship="TO_ONE">
+      <point x="-62.25" y="-159.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="161.29729729729732" y="814.0" />
+      <point x="-38.5" y="60.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Invoice" target="com.sliit.slotopzi.model.Repair" relationship="TO_ONE">
+      <point x="-38.5" y="60.0" />
+      <point x="161.29729729729732" y="814.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="-62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_MANY">
+      <point x="-62.25" y="159.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="83.2304054054054" y="1206.0" />
+      <point x="110.3554054054054" y="1206.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="-60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.RateAndReview" target="com.sliit.slotopzi.model.Customer" relationship="DEPENDENCY">
+      <point x="-37.75" y="-93.0" />
+      <point x="433.43581081081084" y="569.0" />
+      <point x="408.93581081081084" y="569.0" />
+      <point x="-62.25" y="93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.RateAndReview" relationship="DEPENDENCY">
+      <point x="-62.25" y="93.0" />
+      <point x="408.93581081081084" y="569.0" />
+      <point x="433.43581081081084" y="569.0" />
+      <point x="-37.75" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.SubCategory" relationship="DEPENDENCY">
+      <point x="60.25" y="126.0" />
+      <point x="427.4804054054054" y="1522.0" />
+      <point x="372.2304054054054" y="1522.0" />
+      <point x="372.2304054054054" y="1532.0" />
+      <point x="388.9804054054054" y="1532.0" />
+      <point x="55.25" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.SubCategory" target="com.sliit.slotopzi.model.ServiceEntry" relationship="DEPENDENCY">
+      <point x="55.25" y="-71.0" />
+      <point x="388.9804054054054" y="1532.0" />
+      <point x="372.2304054054054" y="1532.0" />
+      <point x="372.2304054054054" y="1522.0" />
+      <point x="427.4804054054054" y="1522.0" />
+      <point x="60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.Slot" relationship="DEPENDENCY">
+      <point x="56.5" y="-71.0" />
+      <point x="271.6722972972973" y="1718.0" />
+      <point x="132.9804054054054" y="1718.0" />
+      <point x="132.9804054054054" y="1216.0" />
+      <point x="338.6722972972973" y="1216.0" />
+      <point x="338.6722972972973" y="1186.0" />
+      <point x="264.6662162162162" y="1186.0" />
+      <point x="54.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Slot" target="com.sliit.slotopzi.model.Section" relationship="DEPENDENCY">
+      <point x="54.25" y="71.0" />
+      <point x="264.6662162162162" y="1186.0" />
+      <point x="338.6722972972973" y="1186.0" />
+      <point x="338.6722972972973" y="1216.0" />
+      <point x="132.9804054054054" y="1216.0" />
+      <point x="132.9804054054054" y="1718.0" />
+      <point x="271.6722972972973" y="1718.0" />
+      <point x="56.5" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Vehicle" relationship="DEPENDENCY">
+      <point x="62.25" y="-159.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="636.0472972972973" y="804.0" />
+      <point x="636.0472972972973" y="335.0" />
+      <point x="750.2304054054055" y="335.0" />
+      <point x="56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Repair" relationship="DEPENDENCY">
+      <point x="56.75" y="126.0" />
+      <point x="750.2304054054055" y="335.0" />
+      <point x="636.0472972972973" y="335.0" />
+      <point x="636.0472972972973" y="804.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_ONE">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="82.9804054054054" y="1924.0" />
+      <point x="82.9804054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="-60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Staff" relationship="TO_ONE">
+      <point x="-60.25" y="126.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="82.9804054054054" y="1532.0" />
+      <point x="82.9804054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="-56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.Staff" relationship="DEPENDENCY">
+      <point x="57.25" y="-82.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="491.56081081081084" y="2185.0" />
+      <point x="56.75" y="104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Appointment" relationship="DEPENDENCY">
+      <point x="56.75" y="104.0" />
+      <point x="491.56081081081084" y="2185.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.SubCategory" target="com.sliit.slotopzi.model.Section" relationship="TO_ONE">
+      <point x="-55.25" y="71.0" />
+      <point x="278.4804054054054" y="1728.0" />
+      <point x="122.2304054054054" y="1728.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="-56.5" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.SubCategory" relationship="TO_ONE">
+      <point x="-56.5" y="-71.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1728.0" />
+      <point x="278.4804054054054" y="1728.0" />
+      <point x="-55.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.SubCategory" relationship="TO_MANY">
+      <point x="-56.5" y="-71.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1728.0" />
+      <point x="278.4804054054054" y="1728.0" />
+      <point x="-55.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Appointment" relationship="TO_MANY">
+      <point x="-56.75" y="104.0" />
+      <point x="378.06081081081084" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Customer" relationship="DEPENDENCY">
+      <point x="56.75" y="126.0" />
+      <point x="750.2304054054055" y="325.0" />
+      <point x="484.5472972972973" y="325.0" />
+      <point x="484.5472972972973" y="335.0" />
+      <point x="533.4358108108108" y="335.0" />
+      <point x="62.25" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.Vehicle" relationship="DEPENDENCY">
+      <point x="62.25" y="-93.0" />
+      <point x="533.4358108108108" y="335.0" />
+      <point x="484.5472972972973" y="335.0" />
+      <point x="484.5472972972973" y="325.0" />
+      <point x="750.2304054054055" y="325.0" />
+      <point x="56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Slot" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_MANY">
+      <point x="-54.25" y="71.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="115.6054054054054" y="1216.0" />
+      <point x="110.3554054054054" y="1216.0" />
+      <point x="110.3554054054054" y="1226.0" />
+      <point x="306.9804054054054" y="1226.0" />
+      <point x="-60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Slot" relationship="DEPENDENCY">
+      <point x="60.25" y="-126.0" />
+      <point x="427.4804054054054" y="1206.0" />
+      <point x="338.6722972972973" y="1206.0" />
+      <point x="338.6722972972973" y="1186.0" />
+      <point x="264.6662162162162" y="1186.0" />
+      <point x="54.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Slot" target="com.sliit.slotopzi.model.ServiceEntry" relationship="DEPENDENCY">
+      <point x="54.25" y="71.0" />
+      <point x="264.6662162162162" y="1186.0" />
+      <point x="338.6722972972973" y="1186.0" />
+      <point x="338.6722972972973" y="1206.0" />
+      <point x="427.4804054054054" y="1206.0" />
+      <point x="60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.AppointmentSlot" target="com.sliit.slotopzi.model.Appointment" relationship="TO_MANY">
+      <point x="-56.75" y="49.0" />
+      <point x="127.81081081081078" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Repair" relationship="TO_ONE">
+      <point x="-56.75" y="126.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="336.18581081081084" y="335.0" />
+      <point x="336.18581081081084" y="814.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="-62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Vehicle" relationship="TO_ONE">
+      <point x="-62.25" y="-159.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="336.18581081081084" y="814.0" />
+      <point x="336.18581081081084" y="335.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="-56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Section" relationship="TO_ONE">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="159.1054054054054" y="1924.0" />
+      <point x="-56.5" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.Staff" relationship="TO_ONE">
+      <point x="-56.5" y="71.0" />
+      <point x="159.1054054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="-56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.RateAndReview" target="com.sliit.slotopzi.model.Repair" relationship="DEPENDENCY">
+      <point x="37.75" y="93.0" />
+      <point x="508.93581081081084" y="804.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.RateAndReview" relationship="DEPENDENCY">
+      <point x="62.25" y="-159.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="508.93581081081084" y="804.0" />
+      <point x="37.75" y="93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.UserData" target="com.sliit.slotopzi.model.Customer" relationship="DEPENDENCY">
+      <point x="40.0" y="137.0" />
+      <point x="519.9804054054055" y="295.0" />
+      <point x="484.9804054054054" y="295.0" />
+      <point x="484.9804054054054" y="335.0" />
+      <point x="533.4358108108108" y="335.0" />
+      <point x="62.25" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.UserData" relationship="DEPENDENCY">
+      <point x="62.25" y="-93.0" />
+      <point x="533.4358108108108" y="335.0" />
+      <point x="484.9804054054054" y="335.0" />
+      <point x="484.9804054054054" y="295.0" />
+      <point x="519.9804054054055" y="295.0" />
+      <point x="40.0" y="137.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Staff" relationship="TO_ONE">
+      <point x="-62.25" y="159.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="83.2304054054054" y="1226.0" />
+      <point x="77.9804054054054" y="1226.0" />
+      <point x="77.9804054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="-56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Repair" relationship="TO_ONE">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="77.9804054054054" y="1924.0" />
+      <point x="77.9804054054054" y="1226.0" />
+      <point x="83.2304054054054" y="1226.0" />
+      <point x="83.2304054054054" y="1196.0" />
+      <point x="401.16621621621624" y="1196.0" />
+      <point x="-62.25" y="159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.Vehicle" relationship="TO_MANY">
+      <point x="-62.25" y="-93.0" />
+      <point x="408.93581081081084" y="335.0" />
+      <point x="474.5472972972973" y="335.0" />
+      <point x="474.5472972972973" y="315.0" />
+      <point x="287.2972972972973" y="315.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="-56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.Invoice" relationship="DEPENDENCY">
+      <point x="62.25" y="-159.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="238.29729729729732" y="804.0" />
+      <point x="38.5" y="60.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.SubCategory" target="com.sliit.slotopzi.model.ServiceEntry" relationship="TO_MANY">
+      <point x="-55.25" y="-71.0" />
+      <point x="278.4804054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1532.0" />
+      <point x="328.7304054054054" y="1522.0" />
+      <point x="306.9804054054054" y="1522.0" />
+      <point x="-60.25" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Invoice" target="com.sliit.slotopzi.model.Repair" relationship="DEPENDENCY">
+      <point x="38.5" y="60.0" />
+      <point x="238.29729729729732" y="804.0" />
+      <point x="567.7912162162162" y="804.0" />
+      <point x="567.7912162162162" y="824.0" />
+      <point x="525.6662162162162" y="824.0" />
+      <point x="62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.AppointmentSlot" relationship="DEPENDENCY">
+      <point x="57.25" y="-82.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="241.31081081081078" y="2185.0" />
+      <point x="56.75" y="49.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.AppointmentSlot" target="com.sliit.slotopzi.model.Appointment" relationship="DEPENDENCY">
+      <point x="56.75" y="49.0" />
+      <point x="241.31081081081078" y="2185.0" />
+      <point x="439.81081081081084" y="2185.0" />
+      <point x="439.81081081081084" y="2205.0" />
+      <point x="365.31081081081084" y="2205.0" />
+      <point x="57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.Section" relationship="DEPENDENCY">
+      <point x="56.75" y="-104.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="272.10540540540546" y="1924.0" />
+      <point x="56.5" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.Staff" relationship="DEPENDENCY">
+      <point x="56.5" y="71.0" />
+      <point x="272.10540540540546" y="1924.0" />
+      <point x="597.3108108108108" y="1924.0" />
+      <point x="597.3108108108108" y="1934.0" />
+      <point x="491.56081081081084" y="1934.0" />
+      <point x="56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.Slot" relationship="TO_MANY">
+      <point x="-56.5" y="-71.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="121.9804054054054" y="1206.0" />
+      <point x="115.6054054054054" y="1206.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="-54.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.RateAndReview" target="com.sliit.slotopzi.model.Repair" relationship="TO_ONE">
+      <point x="-37.75" y="93.0" />
+      <point x="433.43581081081084" y="814.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="-62.25" y="-159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.RateAndReview" relationship="TO_ONE">
+      <point x="-62.25" y="-159.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="433.43581081081084" y="814.0" />
+      <point x="-37.75" y="93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.UserData" relationship="TO_ONE">
+      <point x="-62.25" y="-93.0" />
+      <point x="408.93581081081084" y="335.0" />
+      <point x="474.5472972972973" y="335.0" />
+      <point x="474.5472972972973" y="295.0" />
+      <point x="439.9804054054054" y="295.0" />
+      <point x="-40.0" y="137.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.UserData" target="com.sliit.slotopzi.model.Customer" relationship="TO_ONE">
+      <point x="-40.0" y="137.0" />
+      <point x="439.9804054054054" y="295.0" />
+      <point x="474.5472972972973" y="295.0" />
+      <point x="474.5472972972973" y="335.0" />
+      <point x="408.93581081081084" y="335.0" />
+      <point x="-62.25" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Appointment" relationship="TO_MANY">
+      <point x="-56.75" y="126.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="0.0" y="335.0" />
+      <point x="0.0" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.ServiceEntry" relationship="DEPENDENCY">
+      <point x="62.25" y="159.0" />
+      <point x="525.6662162162162" y="1206.0" />
+      <point x="569.4358108108108" y="1206.0" />
+      <point x="569.4358108108108" y="1226.0" />
+      <point x="427.4804054054054" y="1226.0" />
+      <point x="60.25" y="-126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.ServiceEntry" target="com.sliit.slotopzi.model.Repair" relationship="DEPENDENCY">
+      <point x="60.25" y="-126.0" />
+      <point x="427.4804054054054" y="1226.0" />
+      <point x="569.4358108108108" y="1226.0" />
+      <point x="569.4358108108108" y="1206.0" />
+      <point x="525.6662162162162" y="1206.0" />
+      <point x="62.25" y="159.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.UserData" target="com.sliit.slotopzi.model.Staff" relationship="TO_ONE">
+      <point x="-40.0" y="137.0" />
+      <point x="439.9804054054054" y="295.0" />
+      <point x="474.5472972972973" y="295.0" />
+      <point x="474.54729729729735" y="325.0" />
+      <point x="30.297297297297348" y="325.0" />
+      <point x="30.297297297297348" y="1924.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="-56.75" y="-104.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Section" target="com.sliit.slotopzi.model.Slot" relationship="TO_ONE">
+      <point x="-56.5" y="-71.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="121.9804054054054" y="1206.0" />
+      <point x="115.6054054054054" y="1206.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="-54.25" y="71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Slot" target="com.sliit.slotopzi.model.Section" relationship="TO_ONE">
+      <point x="-54.25" y="71.0" />
+      <point x="156.1662162162162" y="1186.0" />
+      <point x="115.6054054054054" y="1186.0" />
+      <point x="115.6054054054054" y="1206.0" />
+      <point x="121.9804054054054" y="1206.0" />
+      <point x="122.2304054054054" y="1738.0" />
+      <point x="159.1054054054054" y="1738.0" />
+      <point x="-56.5" y="-71.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Customer" target="com.sliit.slotopzi.model.RateAndReview" relationship="TO_MANY">
+      <point x="62.25" y="93.0" />
+      <point x="533.4358108108108" y="569.0" />
+      <point x="508.93581081081084" y="569.0" />
+      <point x="37.75" y="-93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Staff" target="com.sliit.slotopzi.model.UserData" relationship="TO_ONE">
+      <point x="-56.75" y="-104.0" />
+      <point x="378.06081081081084" y="1934.0" />
+      <point x="171.8554054054054" y="1934.0" />
+      <point x="171.8554054054054" y="1924.0" />
+      <point x="30.297297297297348" y="1924.0" />
+      <point x="30.297297297297348" y="325.0" />
+      <point x="474.54729729729735" y="325.0" />
+      <point x="474.5472972972973" y="295.0" />
+      <point x="439.9804054054054" y="295.0" />
+      <point x="-40.0" y="137.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Repair" target="com.sliit.slotopzi.model.RateAndReview" relationship="TO_MANY">
+      <point x="-62.25" y="-159.0" />
+      <point x="401.1662162162162" y="824.0" />
+      <point x="364.7912162162162" y="824.0" />
+      <point x="364.7912162162162" y="814.0" />
+      <point x="433.43581081081084" y="814.0" />
+      <point x="-37.75" y="93.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Appointment" target="com.sliit.slotopzi.model.Vehicle" relationship="TO_ONE">
+      <point x="-57.25" y="-82.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="0.0" y="2195.0" />
+      <point x="0.0" y="335.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="-56.75" y="126.0" />
+    </edge>
+    <edge source="com.sliit.slotopzi.model.Vehicle" target="com.sliit.slotopzi.model.Appointment" relationship="TO_ONE">
+      <point x="-56.75" y="126.0" />
+      <point x="636.7304054054055" y="305.0" />
+      <point x="287.2972972972973" y="305.0" />
+      <point x="287.2972972972973" y="335.0" />
+      <point x="0.0" y="335.0" />
+      <point x="0.0" y="2195.0" />
+      <point x="179.5608108108108" y="2195.0" />
+      <point x="179.5608108108108" y="2205.0" />
+      <point x="250.8108108108108" y="2205.0" />
+      <point x="-57.25" y="-82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="413.5" y="954.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

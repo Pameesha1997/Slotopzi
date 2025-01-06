@@ -1,0 +1,56 @@
+package com.sliit.slotopzi.model;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import java.util.Set;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Staff {
+
+    @Id
+    @GeneratedValue
+    private long staffId;
+
+    @Column(nullable = false)
+    private String firstName;
+
+    @Column(nullable = false)
+    private String lastName;
+
+    @OneToOne
+    @JsonIgnore
+    private UserData userData;
+
+    @OneToMany(targetEntity = Appointment.class, mappedBy = "staff", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private Set<Appointment> appointments;
+
+    @OneToMany(targetEntity = Section.class, mappedBy = "staff", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private Set<Section> sections;
+
+//    @OneToMany(targetEntity = ItemRequest.class, mappedBy = "staff", cascade = CascadeType.ALL)
+//    @JsonIgnore
+//    private Set<ItemRequest> itemRequests;
+
+    @OneToMany(targetEntity = ServiceEntry.class, mappedBy = "staff", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private Set<ServiceEntry> serviceEntries;
+
+    @OneToMany(targetEntity = Repair.class, mappedBy = "staff", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private Set<Repair> repairs;
+
+//    @OneToMany(targetEntity = Slot.class, mappedBy = "staff", cascade = CascadeType.ALL)
+//    @JsonIgnore
+//    private Set<Slot> slots;
+
+}
